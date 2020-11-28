@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Manager {
+
+	public static void main(String[] args) {
+		Scanner sc = null;
+		sc = new Scanner(System.in);
+		System.out.println("enter the size of  int array");
+		int num = sc.nextInt();
+		int[] a = new int[num];
+		System.out.println("enter the vales inside int array");
+		for (int i = 0; i < a.length; i++) {
+
+			a[i] = sc.nextInt();
+		}
+		System.out.println("enter the size of string array");
+		int sum = sc.nextInt();
+		String[] b = new String[sum];
+		System.out.println("enter the vales inside string array");
+		for (int j = 0; j < b.length; j++) {
+			b[j] = sc.next();
+
+		}
+
+		System.out.println("number of the employees");
+		int d = sc.nextInt();
+		for (int k = 4; k < b.length - 2; k++) {
+
+			System.out.print(b[k] + " :");
+			System.out.println(a[k]);
+
+		}
+		System.out.println("the diffence between max and min is");
+		System.out.println(a[7] - a[4]);
+		System.out.println("number of the employees");
+		int e = sc.nextInt();
+		for (int k = 1; k < b.length - 3; k++) {
+
+			System.out.print(b[k] + " : ");
+			System.out.println(a[k]);
+
+		}
+		System.out.println("the diffence between max and min is");
+		System.out.println(a[6] - a[1]);
+		System.out.println("number of the employees");
+		int f = sc.nextInt();
+		for (int k = 5; k < b.length - 3; k++) {
+
+			System.out.print(b[k] + " :");
+			System.out.println(a[k]);
+
+		}
+		System.out.println("the diffence between max and min is");
+		System.out.println(a[6] - a[5]);
+
+		if (sc != null) {
+			sc.close();
+		}
+	}
+}
